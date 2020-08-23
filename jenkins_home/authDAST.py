@@ -18,9 +18,9 @@ myusername = randomString(8)
 mypassword = randomString(12)
 
 if len(sys.argv) < 4:
-    print '1. Provide the ip address for selenium remote server!'
-    print '2. Provide the ip address for target DAST scan!'
-    print '3. Provide the output location of html report!'
+    print('1. Provide the ip address for selenium remote server!')
+    print('2. Provide the ip address for target DAST scan!')
+    print('3. Provide the output location of html report!'
     sys.exit(1)
 
 driver = webdriver.Remote("http://"+sys.argv[1]+":4444/wd/hub", DesiredCapabilities.CHROME)
